@@ -46,6 +46,11 @@ Page({
       url: '../theme/theme?id=' + id + '&name=' + name
     })
   },
-
+  /*search */
+  search:function(e){
+    wx.navigateTo({
+      url: '../search/search'
+    })
+  }
  
 })

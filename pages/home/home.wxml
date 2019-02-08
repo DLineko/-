@@ -7,6 +7,10 @@
             </swiper-item>
         </block>
     </swiper>   
+    <view class='search'>
+    <!--提交按钮  -->
+    <input type="text" name="id" placeholder='输入关键词' style='border:1px solid #ccc;height:30px;' bindtap='search'/>
+    </view>
     <view class="home-main">
       <!--主题精选-->
         <view class="home-main-theme">
