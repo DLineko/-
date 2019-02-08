@@ -1,9 +1,12 @@
 
 <view class="container my-container" hidden="{{!loadingHidden}}">
+
   <view class="my-header">
+  <button open-type="getUserInfo" bindgetuserinfo="getUserInfo" class='auth-button'> 
     <image src="{{userInfo.avatarUrl}}"></image>
     <text class="name">{{userInfo.nickName}}</text>
-  </view>
+  </button>
+    </view>
   <!--地址管理-->
   <view class="my-address">
     <block wx:if="{{addressInfo}}">

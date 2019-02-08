@@ -1,5 +1,11 @@
 @import "../tpls/base.wxss";
-
+.auth-button{
+  background:#AB956D;
+  color:white;
+}
+.auth-button::after{
+  border: none;
+}
 .my-container{
     background-color:#EDEDED;
 }
