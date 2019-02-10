@@ -8,17 +8,3 @@
   <view style='color:#f00;'>{{item.name}}</view>
 <image src="http://y.cn/images{{item.main_img_url}}"></image>
 </view>
-<!-- <form bindsubmit="formSubmit">
-<!--提交按钮  -->
-<!-- <input type="text" name="keywords" placeholder='输入关键词' style='border:1px solid #ccc;height:30px;' id="bdcs-search-form-input"  />
-<button formType="submit" class="btn">搜索</button>    
-</form>
-<view>搜索结果</view>
-<view wx:for="{{re}}" wx:key="re">
-  <view style='color:#f00;'>{{item.result}}</view>
-  <view style='color:green;'>{{item.title}}</view>
-</view> -->
-<!-- <form id="bdcs-search-form" bindsubmit="formSubmit">
-    <input type="text" placeholder="请输入关键词" id="bdcs-search-form-input" class="bdcs-search-form-input" name="keywords" autocomplete="off" style="line-height: 30px; width:220px;" />
-    <button value="搜索" id="bdcs-search-form-submit" >搜索</button>
-</form> -->

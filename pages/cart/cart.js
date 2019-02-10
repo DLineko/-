@@ -104,30 +104,39 @@ Page({
   /*删除商品*/
   delete: function (event) {
     var id = cart.getDataSet(event, 'id'),
-      index = this._getProductIndexById(id);
+    index = this._getProductIndexById(id);
     this.data.cartData.splice(index, 1);//删除某一项商品
     this._resetCartData();
     // this.toggleSelectAll();
+   
     cart.delete(id);  //内存中删除该商品
   },
-  // /*删除全部商品*/
-  // deleteAll:function(event){
-  //   var status = cart.getDataSet(event, 'status') == 'true';
-  //   var id = cart.getDataSet(event, 'id'),
-  //   index = this._getProductIndexById(id);
-  //   var data = this.data.cartData,
-  //     len = data.length;
-  //   for (let i = 0; i < len; i++) {
-  //     data[i].selectStatus = !status;
-  //   }
-  //   this.data.cartData.splice(index, id);
-  //   cart.delete(id);  
-  // },
+   // 删除单选框
+  deleteitem: function (e) {
+    var length = this.data.cartData.length;
+    var data = this.data.cartData;
+    var arr2=[];
+    for(var i=0;i<length;i++){
+      if (!data[i].selectStatus)
+      {
+          arr2.push(data[i]);  
+        
+      }   
+      if(data[i].selectStatus) {
+        cart.delete(data[i].id);
+      }
+  
+    }
+    this.setData({
+        cartData: arr2,
+    })
+   
+  },
   /*选择商品*/
   toggleSelect: function (event) {
     var id = cart.getDataSet(event, 'id'),
-      status = cart.getDataSet(event, 'status'),
-      index = this._getProductIndexById(id);
+    status = cart.getDataSet(event, 'status'),
+    index = this._getProductIndexById(id);
     this.data.cartData[index].selectStatus = !status;
     this._resetCartData();
   },

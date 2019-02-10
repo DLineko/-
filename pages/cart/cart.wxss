@@ -8,7 +8,10 @@
     margin-bottom: 92rpx;
     font-size: 28rpx;
 }
-
+.delelte-all{
+  width:30%;
+  font-size:35rpx;
+}
 .cart-item{
     display: flex;
     padding:20rpx;
