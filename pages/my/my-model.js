@@ -42,6 +42,7 @@ class My extends Base{
         delete res.nickName;  //将昵称去除
         var allParams = {
             url: 'user/wx_info',
+            dataType:'json',
             data:{nickname:nickName,extend:JSON.stringify(res)},
             type:'post',
             sCallback: function (data) {

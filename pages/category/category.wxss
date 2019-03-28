@@ -48,6 +48,9 @@
 .tanslate5{
     transform:translate(0,-500vh);
 }
+.tanslate6{
+    transform:translate(0,-600vh);
+}
 .foods-type-box{
     height: 100vh;
 }

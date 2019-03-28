@@ -28,11 +28,10 @@
       <view class="foods-type-box">
         <template is="categorydetail" data="{{categoryInfo:categoryInfo5}}"/>
       </view>
-
+      <view class="foods-type-box">
+        <template is="categorydetail" data="{{categoryInfo:categoryInfo6}}"/>
+      </view>
     </view>
 
   </view>
-  <loading hidden="{{loadingHidden}}">
-    加载中...
-  </loading>
 </view>

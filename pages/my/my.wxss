@@ -1,6 +1,6 @@
 @import "../tpls/base.wxss";
 .auth-button{
-  background:#AB956D;
+  background:#df4b4b17;
   color:white;
 }
 .auth-button::after{
@@ -10,7 +10,7 @@
     background-color:#EDEDED;
 }
 .my-header{
-    background-color: #AB956D;
+    background-color: #df4b4bd2;
     color: #fff;
     display: flex;
     align-items: center;

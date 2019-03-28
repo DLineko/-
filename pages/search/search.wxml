@@ -4,7 +4,12 @@
 <button formType="submit" class="btn">搜索</button>    
 </form>
 <view>搜索结果</view>
-<view wx:for="{{re}}" wx:key="re">
-  <view style='color:#f00;'>{{item.name}}</view>
-<image src="http://y.cn/images{{item.main_img_url}}"></image>
+ <view class="products-box">
+<view class="products-item" wx:for="{{re}}" wx:key="re" bindtap='onProductsItemTap' data-id='{{item.id}}'>
+<image src="http://y.cn/images{{item.main_img_url}}"  class="products-image"></image>
+<view class='products-item-bottom'>
+ <text class='name'>{{item.name}}</text>
+  <view class='price'>￥{{item.price}}</view>
+</view>
+</view>
 </view>

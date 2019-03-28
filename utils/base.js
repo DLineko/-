@@ -4,7 +4,7 @@ import { Config } from 'config.js';
 
 class Base {
     constructor() {
-        "use strict";
+     
         this.baseRestUrl = Config.restUrl;
         this.onPay=Config.onPay;
     }

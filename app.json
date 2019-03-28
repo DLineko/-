@@ -13,7 +13,7 @@
   "window": {
     "navigationBarTitleText": "",
     "navigationBarTextStyle": "white",
-    "navigationBarBackgroundColor": "#AB956D",
+    "navigationBarBackgroundColor": "#df4b4b",
     "backgroundColor": "#FFFFFF",
     "backgroundTextStyle": "dark",
     "enablePullDownRefresh": true

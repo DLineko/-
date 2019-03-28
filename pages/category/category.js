@@ -2,7 +2,7 @@ import { Category } from 'category-model.js';
 var category=new Category();  //实例化 home 的推荐页面
 Page({
   data: {
-    transClassArr:['tanslate0','tanslate1','tanslate2','tanslate3','tanslate4','tanslate5'],
+    transClassArr: ['tanslate0', 'tanslate1', 'tanslate2', 'tanslate3', 'tanslate4', 'tanslate5', 'tanslate6'],
     currentMenuIndex:0,
     loadingHidden:false,
   },
@@ -27,7 +27,7 @@ Page({
           title: categoryData[0].name
         };
         that.setData({
-          loadingHidden: true,
+          // loadingHidden: true,
           categoryInfo0:dataObj
         });
         callback&& callback();
@@ -61,7 +61,7 @@ Page({
 
   getDataObjForBind:function(index,data){
     var obj={},
-        arr=[0,1,2,3,4,5],
+        arr=[0,1,2,3,4,5,6],
         baseData=this.data.categoryTypeArr[index];
     for(var item in arr){
       if(item==arr[index]) {
@@ -100,7 +100,7 @@ Page({
   //分享效果
   onShareAppMessage: function () {
     return {
-      title: '零食商贩 Pretty Vendor',
+      title: '呆呆爱读书^ ^',
       path: 'pages/category/category'
     }
   }
